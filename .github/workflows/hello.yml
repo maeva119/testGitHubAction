@@ -5,8 +5,8 @@ name: Exercice 1
 on:
   push:
     paths:
-    -'**.yml'
-    -'!**/text/*yml'
+    - '**.yml'
+    - '!**/text/*yml'
 jobs:
   job_ex1:
     runs-on: ubuntu-latest
