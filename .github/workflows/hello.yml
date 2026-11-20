@@ -3,13 +3,12 @@ name: Exercice 1
 
 #à completer
 on:
-  push:
-    paths:
-    - '**.yml'
-    - '!**/text/*yml'
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
 jobs:
   job_ex1:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "Tomtom et nana kaelo marsupulami verifient les fichiers yaml"
+      - run: echo "Tomtom et nana kaelo marsupulami s'exercutent toutes les 5 minutes ou manuellement"
